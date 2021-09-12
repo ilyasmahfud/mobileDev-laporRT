@@ -1,10 +1,9 @@
-import 'package:final_project/src/ui/loginPage/widgets/BelumAdaAkun.dart';
-import 'package:final_project/src/ui/loginPage/widgets/TextLogin.dart';
-import 'package:final_project/src/ui/loginPage/widgets/SubmitButton.dart';
+import 'package:final_project/src/ui/resetPassword/widgets/ResetButton.dart';
+import 'package:final_project/src/ui/resetPassword/widgets/TextReset.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class ResetPassword extends StatelessWidget {
+  const ResetPassword({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,15 +25,11 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Container(
                     margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                    child: TextLogin(),
+                    child: TextReset(),
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                    child: SubmitButton(),
-                  ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                    child: BelumAdaAkun(),
+                    child: ResetButton(),
                   ),
                 ],
               )),

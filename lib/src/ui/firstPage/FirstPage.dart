@@ -24,17 +24,17 @@ class FirstPage extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(35,35,35,0),
+            margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
             child: TopTexts(),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(35,35,35,0),
+            margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
             child: DaftarButton(),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(35,15,35,0),
+            margin: EdgeInsets.fromLTRB(35, 15, 35, 0),
             child: MasukButton(),
-          )
+          ),
         ],
       ),
     );
