@@ -1,4 +1,5 @@
 import 'package:final_project/src/ui/loginPage/widgets/BelumAdaAkun.dart';
+import 'package:final_project/src/ui/loginPage/widgets/FormInput.dart';
 import 'package:final_project/src/ui/loginPage/widgets/TextLogin.dart';
 import 'package:final_project/src/ui/loginPage/widgets/SubmitButton.dart';
 import 'package:flutter/material.dart';
@@ -30,10 +31,14 @@ class LoginPage extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                    child: SubmitButton(),
+                    child: FormInput(),
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
+                    child: SubmitButton(),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(35, 10, 35, 0),
                     child: BelumAdaAkun(),
                   ),
                 ],

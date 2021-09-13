@@ -1,5 +1,3 @@
-import 'package:final_project/src/ui/registerPage/RegisterPage.dart';
-import 'package:final_project/src/ui/resetPassword/ResetPassword.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/src/ui/firstPage/FirstPage.dart';
 

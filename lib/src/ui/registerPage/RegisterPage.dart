@@ -38,7 +38,7 @@ class RegisterPage extends StatelessWidget {
                     child: RegisterButton(),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
+                    margin: EdgeInsets.fromLTRB(35, 10, 35, 0),
                     child: SudahAdaAkun(),
                   ),
                 ],
