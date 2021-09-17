@@ -14,7 +14,7 @@ class TextRegister extends StatelessWidget {
             "Buat Akunmu",
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.deepOrange[400],
               fontSize: 25,
               fontFamily: "Poppins",
               fontWeight: FontWeight.w700,

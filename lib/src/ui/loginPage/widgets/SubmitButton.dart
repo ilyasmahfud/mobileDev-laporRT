@@ -1,4 +1,5 @@
 import 'package:final_project/src/ui/firstPage/FirstPage.dart';
+import 'package:final_project/src/ui/home/Home.dart';
 import 'package:flutter/material.dart';
 
 class SubmitButton extends StatelessWidget {
@@ -11,7 +12,7 @@ class SubmitButton extends StatelessWidget {
       height: 39,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: Colors.black,
+        color: Colors.deepOrange[400],
       ),
       child: Material(
         color: Colors.transparent,
@@ -19,7 +20,7 @@ class SubmitButton extends StatelessWidget {
           onTap: () {
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) {
-              return FirstPage();
+              return Home();
             }));
           },
           child: Center(

@@ -14,7 +14,7 @@ class TextLogin extends StatelessWidget {
             "Selamat Datang !",
             textAlign: TextAlign.left,
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.deepOrange[400],
               fontSize: 25,
               fontFamily: "Poppins",
               fontWeight: FontWeight.w700,

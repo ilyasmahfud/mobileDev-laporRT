@@ -16,7 +16,7 @@ class FirstPage extends StatelessWidget {
             // color: Color.fromARGB(1, 196, 196, 196),
             height: MediaQuery.of(context).size.width * 0.9,
             decoration: BoxDecoration(
-              color: Colors.purpleAccent,
+              color: Colors.deepOrange[400],
               // color: Color.fromARGB(1, 196, 196, 196),
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(500),

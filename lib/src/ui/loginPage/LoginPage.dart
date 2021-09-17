@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      color: Colors.grey,
+      color: Colors.deepOrange[400],
       child: ListView(
         children: [
           Container(
