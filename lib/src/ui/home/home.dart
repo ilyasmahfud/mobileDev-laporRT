@@ -1,17 +1,28 @@
 import 'package:final_project/constants.dart';
+import 'package:final_project/src/ui/home/widgets/BodyHome.dart';
+import 'package:final_project/src/ui/tambahAduan/TambahAduan.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: buildAppBar(),
-      // body: Body(),
+      body: BodyHome(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) {
+            return TambahAduan();
+          }));
+        },
+        child: const Icon(Icons.add),
+      ),
       bottomNavigationBar: buildBottomNavigationBar(),
-    );
+    ));
   }
 
   BottomNavigationBar buildBottomNavigationBar() {
@@ -30,7 +41,7 @@ class Home extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.white,
       actions: <Widget>[
-        SizedBox(width: kDefaultPaddin / 2),
+        SizedBox(width: kDefaultPaddin / 5),
       ],
     );
   }

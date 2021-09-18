@@ -1,8 +1,8 @@
-import 'package:final_project/src/ui/loginPage/LoginPage.dart';
+import 'package:final_project/src/ui/home/Home.dart';
 import 'package:flutter/material.dart';
 
-class RegisterButton extends StatelessWidget {
-  const RegisterButton({Key? key}) : super(key: key);
+class AduanButton extends StatelessWidget {
+  const AduanButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +19,12 @@ class RegisterButton extends StatelessWidget {
           onTap: () {
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) {
-              return LoginPage();
+              return Home();
             }));
           },
           child: Center(
             child: Text(
-              'Lanjut',
+              'Selesai',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18,
