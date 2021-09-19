@@ -1,13 +1,13 @@
 import 'package:final_project/constants.dart';
-import 'package:final_project/src/ui/tambahAduan/widgets/bodyTambahAduan.dart';
+import 'package:final_project/src/ui/aduanPage/widgets/BodyAduanPage.dart';
 import 'package:flutter/material.dart';
 
-class TambahAduan extends StatelessWidget {
+class AduanPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: BodyTambahAduan(),
+      body: BodyAduanPage(),
     );
   }
 
@@ -26,13 +26,24 @@ class TambahAduan extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Tambah Aduan",
-                style: TextStyle(fontSize: 20),
+                "Aduan Warga",
+                style: TextStyle(fontSize: 16),
               ),
+              Text(
+                "nama warga",
+                style: TextStyle(fontSize: 12),
+              )
             ],
           )
         ],
       ),
+      actions: [
+        IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
+        SizedBox(width: kDefaultPadding / 2),
+      ],
     );
   }
 }

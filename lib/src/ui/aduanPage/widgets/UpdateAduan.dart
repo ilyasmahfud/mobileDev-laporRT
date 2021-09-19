@@ -1,34 +1,18 @@
 import 'package:final_project/constants.dart';
-import 'package:final_project/src/models/Chat.dart';
 import 'package:flutter/material.dart';
 
-class AduanCard extends StatelessWidget {
-  const AduanCard({
-    Key? key,
-    required this.chat,
-    required this.press,
-  }) : super(key: key);
-
-  final Chat chat;
-  final VoidCallback press;
+class UpdateAduan extends StatelessWidget {
+  const UpdateAduan({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: press,
+      // onTap: press,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: kDefaultPadding, vertical: kDefaultPadding * 1),
+            horizontal: kDefaultPadding, vertical: kDefaultPadding * 0.75),
         child: Row(
           children: [
-            Stack(
-              children: [
-                CircleAvatar(
-                  radius: 24,
-                  // backgroundImage: AssetImage(chat.image),
-                ),
-              ],
-            ),
             Expanded(
               child: Padding(
                 padding:
@@ -36,16 +20,16 @@ class AduanCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      chat.name,
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                    ),
-                    SizedBox(height: 8),
+                    // Text(
+                    //   'Terakhir diubah:',
+                    //   style:
+                    //       TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    // ),
+                    // SizedBox(height: 8),
                     Opacity(
                       opacity: 0.64,
                       child: Text(
-                        chat.lastMessage,
+                        'Terakhir diubah:',
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -56,7 +40,7 @@ class AduanCard extends StatelessWidget {
             ),
             Opacity(
               opacity: 0.64,
-              child: Text(chat.time),
+              child: Text('19 September 2021, 09:40'),
             ),
           ],
         ),

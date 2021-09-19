@@ -1,24 +1,16 @@
 import 'package:final_project/constants.dart';
-import 'package:final_project/src/models/Chat.dart';
 import 'package:flutter/material.dart';
 
-class AduanCard extends StatelessWidget {
-  const AduanCard({
-    Key? key,
-    required this.chat,
-    required this.press,
-  }) : super(key: key);
-
-  final Chat chat;
-  final VoidCallback press;
+class AkunAduan extends StatelessWidget {
+  const AkunAduan({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: press,
+      // onTap: press,
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: kDefaultPadding, vertical: kDefaultPadding * 1),
+            horizontal: kDefaultPadding, vertical: kDefaultPadding * 0.75),
         child: Row(
           children: [
             Stack(
@@ -37,7 +29,7 @@ class AduanCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      chat.name,
+                      'Nama Warga',
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                     ),
@@ -45,7 +37,7 @@ class AduanCard extends StatelessWidget {
                     Opacity(
                       opacity: 0.64,
                       child: Text(
-                        chat.lastMessage,
+                        'Topik Aduan',
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -53,10 +45,6 @@ class AduanCard extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
-            Opacity(
-              opacity: 0.64,
-              child: Text(chat.time),
             ),
           ],
         ),
