@@ -15,19 +15,6 @@ class _ChatsScreenState extends State<PengumumanPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: BodyPengumuman(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => TambahAduan(),
-          ),
-        ),
-        backgroundColor: Colors.deepOrange[400],
-        child: Icon(
-          Icons.person_add_alt_1,
-          color: Colors.white,
-        ),
-      ),
     );
   }
 }

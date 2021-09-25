@@ -43,7 +43,7 @@ class _ChatsScreenState extends State<Home> {
       onTap: onTappedBar,
       items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.info), label: "Aduan"),
+        BottomNavigationBarItem(icon: Icon(Icons.info), label: "Pengumuman"),
         BottomNavigationBarItem(
             icon: Icon(Icons.person), label: "Administrasi"),
       ],
