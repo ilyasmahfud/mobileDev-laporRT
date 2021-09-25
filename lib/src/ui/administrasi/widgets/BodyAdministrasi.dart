@@ -1,14 +1,17 @@
 import 'package:final_project/src/models/Chat.dart';
+import 'package:final_project/src/ui/Pengumuman/widgets/AduanCard.dart';
+import 'package:final_project/src/ui/administrasi/widgets/KategoriAdministrasi.dart';
+
 import 'package:final_project/src/ui/aduanPage/AduanPage.dart';
 
-import 'package:final_project/src/ui/home/widgets/AduanCard.dart';
 import 'package:flutter/material.dart';
 
-class BodyHome extends StatelessWidget {
+class BodyAdministrasi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
+        KategoriAdministrasi(),
         Expanded(
           child: ListView.builder(
             itemCount: chatsData.length,

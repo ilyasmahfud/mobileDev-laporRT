@@ -1,37 +1,20 @@
-import 'package:final_project/src/ui/Pengumuman/PengumumanPage.dart';
-import 'package:final_project/src/ui/administrasi/AdministrasiKeuanganPage.dart';
-import 'package:final_project/src/ui/administrasi/AdministrasiSuratPage.dart';
-import 'package:final_project/src/ui/administrasi/AdministrasiWargaPage.dart';
-
-import 'package:final_project/src/ui/beranda/Beranda.dart';
+import 'package:final_project/src/ui/administrasi/widgets/BodyAdministrasi.dart';
 
 import 'package:final_project/src/ui/tambahAduan/TambahAduan.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
+class AdministrasiKeuanganPage extends StatefulWidget {
   @override
   _ChatsScreenState createState() => _ChatsScreenState();
 }
 
-class _ChatsScreenState extends State<Home> {
-  int _currentIndex = 1;
-  final List<Widget> _children = [
-    Beranda(),
-    PengumumanPage(),
-    AdministrasiSuratPage(),
-  ];
-
-  void onTappedBar(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
-
+class _ChatsScreenState extends State<AdministrasiKeuanganPage> {
+  int _selectedIndex = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: _children[_currentIndex],
+      body: BodyAdministrasi(),
       bottomNavigationBar: buildBottomNavigationBar(),
     );
   }
@@ -39,11 +22,15 @@ class _ChatsScreenState extends State<Home> {
   BottomNavigationBar buildBottomNavigationBar() {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      currentIndex: _currentIndex,
-      onTap: onTappedBar,
+      currentIndex: _selectedIndex,
+      onTap: (value) {
+        setState(() {
+          _selectedIndex = value;
+        });
+      },
       items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-        BottomNavigationBarItem(icon: Icon(Icons.info), label: "Aduan"),
+        BottomNavigationBarItem(icon: Icon(Icons.info), label: "Pengumuman"),
         BottomNavigationBarItem(
             icon: Icon(Icons.person), label: "Administrasi"),
       ],
@@ -54,7 +41,7 @@ class _ChatsScreenState extends State<Home> {
     return AppBar(
       automaticallyImplyLeading: false,
       backgroundColor: Colors.deepOrange[400],
-      title: Text("LapoRTe"),
+      title: Text("Aplikasi RT"),
       actions: [
         IconButton(
           icon: Icon(Icons.search),
