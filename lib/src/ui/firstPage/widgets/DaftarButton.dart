@@ -2,7 +2,7 @@ import 'package:final_project/src/ui/registerPage/RegisterPage.dart';
 import 'package:flutter/material.dart';
 
 class DaftarButton extends StatelessWidget {
-  const DaftarButton ({Key? key}) : super(key: key);
+  const DaftarButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,16 +11,15 @@ class DaftarButton extends StatelessWidget {
       height: 39,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: Colors.black,
+        color: Colors.deepOrange,
       ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) {
-                  return RegisterPage();
-                }));
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return RegisterPage();
+            }));
           },
           child: Center(
             child: Text(

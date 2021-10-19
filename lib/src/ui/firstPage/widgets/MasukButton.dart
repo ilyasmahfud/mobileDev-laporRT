@@ -1,4 +1,5 @@
-import 'package:final_project/src/ui/loginPage/LoginPage.dart';
+import 'package:final_project/src/ui/firstPage/FirstPage.dart';
+// import 'package:final_project/src/ui/loginPage/LoginPage.dart';
 import 'package:flutter/material.dart';
 
 class MasukButton extends StatelessWidget {
@@ -11,7 +12,7 @@ class MasukButton extends StatelessWidget {
       height: 39,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: Colors.white,
+        color: Colors.transparent,
       ),
       child: Material(
         color: Colors.transparent,
@@ -19,14 +20,14 @@ class MasukButton extends StatelessWidget {
           onTap: () {
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) {
-              return LoginPage();
+              return FirstPage();
             }));
           },
           child: Center(
             child: Text(
               'Masuk',
               style: TextStyle(
-                color: Colors.black,
+                color: Colors.deepOrangeAccent,
                 fontSize: 18,
                 fontFamily: "Poppins",
                 fontWeight: FontWeight.w600,
