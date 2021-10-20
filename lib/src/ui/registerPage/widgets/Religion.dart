@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MobilePhone extends StatelessWidget {
-  const MobilePhone({Key? key}) : super(key: key);
+class Religion extends StatelessWidget {
+  const Religion({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +10,12 @@ class MobilePhone extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Nomor Telepon",
+            "Agama",
             style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-              fontFamily: "Poppins",
-              color: Color.fromRGBO(137, 36, 0, 100),
-            ),
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+                fontFamily: "Poppins",
+                color: Color.fromRGBO(137, 36, 0, 100)),
           ),
           SizedBox(height: 5),
           TextField(

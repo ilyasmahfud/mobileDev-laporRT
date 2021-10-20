@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MobilePhone extends StatelessWidget {
-  const MobilePhone({Key? key}) : super(key: key);
+class NIK extends StatelessWidget {
+  const NIK({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class MobilePhone extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Nomor Telepon",
+            "NIK",
             style: TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w500,

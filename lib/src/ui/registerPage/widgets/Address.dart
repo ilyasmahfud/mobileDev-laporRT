@@ -12,22 +12,23 @@ class Address extends StatelessWidget {
           Text(
             "Alamat",
             style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w500,
-              fontFamily: "Poppins",
-            ),
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+                fontFamily: "Poppins",
+                color: Color.fromRGBO(137, 36, 0, 100)),
           ),
           SizedBox(height: 5),
           TextField(
             decoration: new InputDecoration(
               fillColor: Colors.white,
               filled: true,
-              border: new OutlineInputBorder(
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.deepOrange),
                 borderRadius: BorderRadius.circular(8),
-                borderSide: BorderSide(
-                  width: 0,
-                  color: Colors.red,
-                ),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+                borderRadius: BorderRadius.circular(8),
               ),
             ),
           ),

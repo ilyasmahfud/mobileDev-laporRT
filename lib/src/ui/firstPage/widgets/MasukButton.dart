@@ -1,4 +1,4 @@
-import 'package:final_project/src/ui/firstPage/FirstPage.dart';
+import 'package:final_project/src/ui/loginPage/LoginPage.dart';
 // import 'package:final_project/src/ui/loginPage/LoginPage.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +20,7 @@ class MasukButton extends StatelessWidget {
           onTap: () {
             Navigator.pushReplacement(context,
                 MaterialPageRoute(builder: (context) {
-              return FirstPage();
+              return LoginPage();
             }));
           },
           child: Center(

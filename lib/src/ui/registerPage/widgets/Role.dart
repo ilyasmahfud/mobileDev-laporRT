@@ -21,6 +21,7 @@ class _RoleState extends State<Role> {
               fontSize: 12,
               fontWeight: FontWeight.w500,
               fontFamily: "Poppins",
+              color: Color.fromRGBO(137, 36, 0, 100),
             ),
           ),
           SizedBox(height: 5),

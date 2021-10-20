@@ -1,38 +1,14 @@
-import 'package:final_project/src/ui/loginPage/LoginPage.dart';
-import 'package:final_project/src/ui/registerPage/RegisterPage2.dart';
+import 'package:final_project/src/ui/home/Home.dart';
+import 'package:final_project/src/ui/registerPage/RegisterPage.dart';
 import 'package:flutter/material.dart';
 
-class Next extends StatelessWidget {
-  const Next({Key? key}) : super(key: key);
+class ButtonLogin extends StatelessWidget {
+  const ButtonLogin({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.deepOrange,
-                  borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-              SizedBox(width: 2),
-              Container(
-                width: 10,
-                height: 10,
-                decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-            ],
-          ),
-        ),
         Container(
           margin: EdgeInsets.all(20),
           height: 39,
@@ -45,12 +21,12 @@ class Next extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return RegisterPage2();
+                  return Home();
                 }));
               },
               child: Center(
                 child: Text(
-                  'Lanjut',
+                  'Masuk',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -66,7 +42,7 @@ class Next extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Sudah punya akun?",
+              "Belum punya akun?",
               textAlign: TextAlign.right,
               style: TextStyle(
                 color: Colors.deepOrange,
@@ -78,11 +54,11 @@ class Next extends StatelessWidget {
             InkWell(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return LoginPage();
+                  return RegisterPage();
                 }));
               },
               child: Text(
-                " Masuk di sini",
+                " Buat Akun",
                 style: TextStyle(
                     color: Colors.deepOrange,
                     fontSize: 12,

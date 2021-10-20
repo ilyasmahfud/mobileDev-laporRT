@@ -1,13 +1,15 @@
+import 'package:final_project/src/ui/firstPage/FirstPage.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Address.dart';
-import 'package:final_project/src/ui/registerPage/widgets/Back.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Born.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Gender.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Job.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Married.dart';
 import 'package:final_project/src/ui/registerPage/widgets/MobilePhone.dart';
+import 'package:final_project/src/ui/registerPage/widgets/NIK.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Name.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Nationality.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Next.dart';
+import 'package:final_project/src/ui/registerPage/widgets/Religion.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Rt.dart';
 import 'package:final_project/src/ui/registerPage/widgets/TitlePage.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +28,31 @@ class _RegisterPageState extends State<RegisterPage> {
       backgroundColor: Colors.deepOrange,
       body: ListView(
         children: [
-          Back(),
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.only(
+                  top: 20,
+                  bottom: 20,
+                  left: 15,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                ),
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return FirstPage();
+                    }));
+                  },
+                  icon: Icon(Icons.arrow_back_ios_rounded),
+                ),
+              ),
+            ],
+          ),
           Container(
             decoration: BoxDecoration(
               color: Color.fromRGBO(241, 241, 241, 1),
@@ -46,6 +72,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       SizedBox(height: 10),
                       MobilePhone(),
                       SizedBox(height: 10),
+                      NIK(),
+                      SizedBox(height: 10),
                       Rt(),
                       SizedBox(height: 10),
                       Born(),
@@ -54,6 +82,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       Address(),
                       SizedBox(height: 10),
                       Job(),
+                      SizedBox(height: 10),
+                      Religion(),
                       SizedBox(height: 10),
                       Married(),
                       SizedBox(height: 10),

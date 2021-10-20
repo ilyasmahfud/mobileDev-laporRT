@@ -1,3 +1,4 @@
+import 'package:final_project/src/ui/loginPage/LoginPage.dart';
 import 'package:final_project/src/ui/registerPage/RegisterDone.dart';
 import 'package:final_project/src/ui/registerPage/widgets/Back.dart';
 import 'package:final_project/src/ui/registerPage/widgets/ConfirmPassword.dart';
@@ -115,7 +116,12 @@ class _RegisterPage2State extends State<RegisterPage2> {
                                 ),
                               ),
                               InkWell(
-                                onTap: () {},
+                                onTap: () {
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return LoginPage();
+                                  }));
+                                },
                                 child: Text(
                                   " Masuk di sini",
                                   style: TextStyle(
