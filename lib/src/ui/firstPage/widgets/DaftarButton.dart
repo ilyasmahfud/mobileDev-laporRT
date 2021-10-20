@@ -7,7 +7,7 @@ class DaftarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150,
+      width: MediaQuery.of(context).size.width * 0.7,
       height: 39,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),

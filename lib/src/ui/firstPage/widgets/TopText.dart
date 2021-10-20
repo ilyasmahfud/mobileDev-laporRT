@@ -14,10 +14,10 @@ class TopTexts extends StatelessWidget {
             "Selamat \nDatang",
             textAlign: TextAlign.left,
             style: TextStyle(
-              color: Colors.black,
-              fontSize: 45,
+              color: Colors.deepOrange,
+              fontSize: 30,
               fontFamily: "Poppins",
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w900,
             ),
           ),
           Text(

@@ -18,31 +18,40 @@ class _FirstPageState extends State<FirstPage> {
       body: Container(
         decoration: BoxDecoration(color: Colors.white),
         child: Container(
-          child: ListView(
+          child: Stack(
             children: [
-              Container(
-                // color: Color.fromARGB(1, 196, 196, 196),
-                height: MediaQuery.of(context).size.width * 0.9,
-                decoration: BoxDecoration(
-                  color: Colors.deepOrange,
-                  // color: Color.fromARGB(1, 196, 196, 196),
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(200),
+              ListView(
+                children: [
+                  SizedBox(height: MediaQuery.of(context).size.height * 0.5),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(35, 0, 35, 0),
+                    child: TopTexts(),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
+                    child: DaftarButton(),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(35, 15, 35, 0),
+                    child: MasukButton(),
+                  ),
+                  SizedBox(
+                    height: 35,
+                  ),
+                ],
+              ),
+              Positioned(
+                top: MediaQuery.of(context).size.height * -0.5,
+                left: MediaQuery.of(context).size.height * -0.4,
+                child: Container(
+                  width: MediaQuery.of(context).size.height * 1,
+                  height: MediaQuery.of(context).size.height * 1,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.deepOrange,
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                child: TopTexts(),
-              ),
-              Container(
-                margin: EdgeInsets.fromLTRB(35, 35, 35, 0),
-                child: DaftarButton(),
-              ),
-              Container(
-                margin: EdgeInsets.fromLTRB(35, 15, 35, 0),
-                child: MasukButton(),
-              )
             ],
           ),
         ),
