@@ -1,4 +1,3 @@
-import 'package:final_project/src/ui/home/Home.dart';
 import 'package:final_project/src/ui/loginPage/widgets/Back.dart';
 import 'package:final_project/src/ui/loginPage/widgets/ButtonLogin.dart';
 import 'package:final_project/src/ui/loginPage/widgets/TitlePage.dart';
