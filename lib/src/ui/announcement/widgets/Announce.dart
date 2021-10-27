@@ -12,12 +12,20 @@ class _AnnounceState extends State<Announce> {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 10, left: 10, bottom: 0, right: 20),
+      decoration: BoxDecoration(
+        border: Border(
+          bottom: BorderSide(
+            width: 0.1,
+            color: Colors.black,
+          ),
+        ),
+      ),
       child: Row(
         children: [
           Container(
             height: 45,
             width: 45,
-            margin: EdgeInsets.only(top: 5, left: 5, bottom: 0, right: 15),
+            margin: EdgeInsets.only(top: 5, left: 5, bottom: 10, right: 15),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Image(
