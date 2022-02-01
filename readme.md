@@ -21,3 +21,4 @@
     └── main.dart                       => Application main class
 ```
 [link dokumentasi](https://documenter.getpostman.com/view/14453154/U16kqQPh)
+[link figma](https://www.figma.com/file/BWXNuRjbHzUk0qiuBWjfqW/LapoRTe?node-id=0%3A1)
